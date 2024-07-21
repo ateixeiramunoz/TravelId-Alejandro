@@ -1,0 +1,12 @@
+<section id="formularioBaseReserva" class="packages" th:fragment="mensajeIdeal">
+    <div class="container">
+        <form class="form-group" action="/reservas/reservar" method="post">
+
+            <h3>Indica las fechas de entrada y salida </h3>
+            <label for="fechaInicio">Fecha de Entrada</label><input type="date" name="fechaInicio" id="fechaInicio">
+            <label for="fechaFin">Fecha de Salida</label><input type="date" name="fechaFin" id="fechaFin">
+            <input type="hidden" name="idHabitacion" id="idHabitacion" th:value="${habitacion.id}">
+            <input type="submit">
+        </form>
+    </div>
+</section>
